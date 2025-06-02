@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets\media\javifoto.jpg" alt="Profile Photo" class="profile-pic" />
+    <div class="intro">
+      <h1>Javier Asensio Meroño</h1>
+      <p>Game & XR Developer with expertise in Unreal, Unity, shaders and tool building.</p>
+    </div>
+  </header>
+  <div class="portfolio-container">
+    <main class="portfolio">
+      <div class="project-item" data-project="1">
+        <img src="assets\media\sakura\sakuramiku_banner.png" alt="Project 2 Thumbnail" />
+        <h2>Daigo no Sakura: Sakura Miku AR</h2>
+        <p>Web AR application using 8th Wall with Javascript and A-Frame/three.js as well as Unity</p>
+      </div>
+      <div class="project-item" data-project="2">
+        <video autoplay loop muted playsinline>
+          <source src="assets\media\manga\manga_jump_mode.mp4" type="video/mp4" />
+        </video>
+        <h2>Immersive Manga VR Application POC</h2>
+        <p>Meta Quest application that lets you jump into a manga page in VR</p>
+      </div>
+      <div class="project-item" data-project="3">
+        <video autoplay loop muted playsinline>
+          <source src="assets\media\camera\jeannedarc_camera_panel_2025-05-30_20-46-11.mp4" type="video/mp4" />
+        </video>
+        <h2>Jeanne D'Arc: Virtual Camera Tool for Unreal Engine</h2>
+        <p>Screen-space zone tracking and offset control system in Unreal Engine 5.</p>
+      </div>
+      <div class="project-item" data-project="4">
+        <video autoplay loop muted playsinline>
+          <source src="assets\media\aidaruma\darumaai_video_short.mp4" type="video/mp4" />
+        </video>
+        <h2>Red light, green light vs AI</h2>
+        <p>Multiplayer game in which participants play against an AI that detects their movement using beacons and sensors</p>
+      </div>
+      <div class="project-item" data-project="5">
+        <img src="assets/thumb2.jpg" alt="Project 5 Thumbnail" />
+        <h2>Stylized Shader Effects</h2>
+        <p>Stencil buffer-based selective post-processing and stylization in Unity.</p>
+      </div>
+      <div class="project-item" data-project="6">
+        <video autoplay loop muted playsinline>
+          <source src="assets\media\houdinianime\water_threetentacles.mp4" type="video/mp4" />
+        </video>
+        <h2>Houdini physically based water simulations</h2>
+        <p>Physically based water effects in Houdini for an unnanounced anime project.</p>
+      </div>
+    </main>
+  </div>
+  
+  <!-- Modal Structure -->
+  <div id="modal" class="modal">
+    <div class="modal-content" id="modal-content">
+      <span class="close" id="modal-close">&times;</span>
+      <!-- Modal details will be injected here -->
+    </div>
+  </div>
+  <script src="assets/modal.js"></script>
+</body>
+</html>
