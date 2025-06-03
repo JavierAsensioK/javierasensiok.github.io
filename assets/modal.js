@@ -29,7 +29,8 @@ function showModal(id) {
         `<video controls class="portrait" style="border-radius:8px;">
           <source src="assets/media/sakura/sakuramiku_phone_test.mp4" type="video/mp4" />
         </video>`,
-        `<img src="assets/media/sakura/sakura_motioncapture.png" alt="Sakura Miku character model in a motion capture pose, standing in a digital workspace with interface elements visible, neutral expression, technical and creative environment" style="width:100%;margin-top:1rem;border-radius:8px;" />`
+        `<img src="assets/media/sakura/sakura_motioncapture.png" alt="Sakura Miku character model in a motion capture pose, standing in a digital workspace with interface elements visible, neutral expression, technical and creative environment" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
+        `<img src="assets/media/sakura/sakura_unity.png" alt="Sakura Miku character model in a motion capture pose, standing in a digital workspace with interface elements visible, neutral expression, technical and creative environment" style="width:100%;margin-top:1rem;border-radius:8px;" />`
       ]
     },
     2: {
@@ -66,7 +67,27 @@ function showModal(id) {
         </video>`
       ]
     },
+    5: {
+      title: "OTAKU Lovely Densetsu〜 -√EDEN Music Video",
+      description: "Jeanne D'Arc is a virtual camera tool for Unreal Engine 5 that allows anyone to use their phone or the controllers of a VR headset as a camera in virtual space. It has been used by multiple Japanese anime studios in anime production. <br> I was responsible for the development of multiple of its features using both C++ and Unreal Blueprints: <br><br> - Target tracking and framing based on screen-space zones with an offset control system. <br> - Client side of the user authentication and session management system. The system required user login and authentication using Google/X, communicating with a Firebase REST API in order to allow use of some of the tool's features.",
+      media: [
+        `<video controls class="portrait" style="border-radius:8px;">
+          <source src="assets/media/camera/jeannedarc_target_framing.mp4" type="video/mp4" />
+        </video>`,
+        `<img src="assets/media/camera/jeanne_camera.png" alt="Sakura Miku character model in a motion capture pose, standing in a digital workspace with interface elements visible, neutral expression, technical and creative environment" style="width:100%;margin-top:1rem;border-radius:8px;" />`
+      ]
+    },
     6: {
+      title: "αU Metaverse",
+      description: "Metaverse service where users can enjoy a variety of communities and events within the virtual cities of Shibuya and Osaka.",
+      media: [
+        `<video controls class="portrait" style="border-radius:8px;">
+          <source src="assets/media/metaverse/live_short.mp4" type="video/mp4" />
+        </video>`,
+        `<img src="assets/media/metaverse/karaoke.webp" alt="Sakura Miku character model in a motion capture pose, standing in a digital workspace with interface elements visible, neutral expression, technical and creative environment" style="width:100%;margin-top:1rem;border-radius:8px;" />`
+      ]
+    },
+    7: {
       title: "Houdini physically based water simulations",
       description: "Physically based water effects in Houdini for an unnanounced anime project.",
       media: [
@@ -78,7 +99,6 @@ function showModal(id) {
         </video>`
       ]
     },
-    // ...add more projects as needed
   };
 
   const project = projectDetails[id];
