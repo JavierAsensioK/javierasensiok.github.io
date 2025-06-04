@@ -31,7 +31,7 @@ function showModal(id) {
         </video>`,
         `<img src="assets/media/sakura/sakura_motioncapture.png" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
         `<img src="assets/media/sakura/sakura_unity.png" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
-        `<video controls class="portrait" style="border-radius:8px;">
+        `<video controls style="border-radius:8px;">
           <source src="assets/media/sakura/sakuramiku_lipsynctest_short.mp4" type="video/mp4" />
         </video>`,
       ]
