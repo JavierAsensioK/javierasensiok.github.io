@@ -24,18 +24,21 @@ function showModal(id) {
   const projectDetails = {
     1: {
       title: "Daigo no Sakura: Sakura Miku AR",
-      description: "Built a mobile <b>Web AR</b> application for an exhibition at the Nakanoshima Museum of Art in Osaka using <b>Javascript and A-Frame/three.js</b>. I was responsible for everything other than the character assets, including:</br></br> - Designing the <b>asset conversion and optimization pipeline</b> and coordinating with the 3DCG team in order to prepare the assets for the browser based AR application. </br> - Developing the marker-based AR application using <b>8th Wall and Javascript</b> <br> - Implementing the shaders to achieve the desired visual effects for the character model in AR. </br> - Creating the base for the <b>lipsync, clothes and hair animations using Unity</b> </br> - Creating some of the special effects using both <b>Blender and A-frame</b> <br> - Creating the <b>UI and UX</b> for the application, including background logic that used <b>GPS</b> data to only allow users at the museum to watch the AR part.",
+      description: "Built a mobile <b>Web AR</b> application for an exhibition at the Nakanoshima Museum of Art in Osaka using <b>Javascript and A-Frame/three.js</b>. I was responsible for everything other than the character assets, including:</br></br> - Designing the <b>asset conversion and optimization pipeline</b> and coordinating with the 3DCG team in order to prepare the assets for the browser based AR application. </br> - Developing the marker-based AR application using <b>8th Wall and Javascript</b> <br> - Implementing the shaders to achieve the desired visual effects for the character model in AR. </br> - Creating and baking the base Blendshapes animation for the <b>lipsync</b> </br> - Creating and baking the base <b>clothes, hair and branch animations using Unity</b>, setting up their collision and physics settings to minimize clipping </br> - Creating some of the special effects using both <b>Blender and A-frame</b> <br> - Creating the <b>UI and UX</b> for the application, including background logic that used <b>GPS</b> data to only allow users at the museum to watch the AR part.",
       media: [
         `<video controls class="portrait" style="border-radius:8px;">
           <source src="assets/media/sakura/sakuramiku_phone_test.mp4" type="video/mp4" />
         </video>`,
-        `<img src="assets/media/sakura/sakura_motioncapture.png" alt="Sakura Miku character model in a motion capture pose, standing in a digital workspace with interface elements visible, neutral expression, technical and creative environment" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
-        `<img src="assets/media/sakura/sakura_unity.png" alt="Sakura Miku character model in a motion capture pose, standing in a digital workspace with interface elements visible, neutral expression, technical and creative environment" style="width:100%;margin-top:1rem;border-radius:8px;" />`
+        `<img src="assets/media/sakura/sakura_motioncapture.png" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
+        `<img src="assets/media/sakura/sakura_unity.png" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
+        `<video controls class="portrait" style="border-radius:8px;">
+          <source src="assets/media/sakura/sakuramiku_lipsynctest_short.mp4" type="video/mp4" />
+        </video>`,
       ]
     },
     2: {
       title: "Immersive Manga VR Application POC",
-      description: "Proof of concept for Meta Quest application that lets you jump into a manga page in VR. <br> I was responsible for everything other than the models and textures, including the <b>Unreal Engine project VR setup, blueprint scripting</b>, and development of multiple <b>character and full-screen shaders to give it the manga look</b>. Since the manga used was Naruto and the Meta Quest 3 has hand tracking capabilities, I also implemented <b>recognition of sequences of hand signs</b> that appear in the manga to increase immersion for fans of the series.",
+      description: 'Proof of concept for Meta Quest application that lets you jump into a manga page in VR. <br> I was responsible for everything other than the models and textures, including the <b>Unreal Engine project VR setup, blueprint scripting</b>, and development of multiple <b>character and full-screen shaders to give it the manga look</b>. Since the manga used was Naruto and the Meta Quest 3 has hand tracking capabilities, I also suggested and implemented the <b>recognition of sequences of hand signs</b> that appear in the manga to increase immersion for fans of the series. </br></br> I also made "window mode" that uses a stencil buffer shader to turn the manga page into a window that lets you watch the 3D world inside.',
       media: [
         `<video controls class="portrait" style="border-radius:8px;">
           <source src="assets/media/manga/manga_jump_mode.mp4" type="video/mp4" />
@@ -52,7 +55,7 @@ function showModal(id) {
         `<video controls class="portrait" style="border-radius:8px;">
           <source src="assets/media/camera/jeannedarc_target_framing.mp4" type="video/mp4" />
         </video>`,
-        `<img src="assets/media/camera/jeanne_camera.png" alt="Sakura Miku character model in a motion capture pose, standing in a digital workspace with interface elements visible, neutral expression, technical and creative environment" style="width:100%;margin-top:1rem;border-radius:8px;" />`
+        `<img src="assets/media/camera/jeanne_camera.png" style="width:100%;margin-top:1rem;border-radius:8px;" />`
       ]
     },
     4: {
@@ -62,7 +65,7 @@ function showModal(id) {
         `<video controls class="portrait" style="border-radius:8px;">
           <source src="assets/media/aidaruma/darumaai_video_short.mp4" />
         </video>`,
-        `<img src="assets/media/aidaruma/beacons.jpg" alt="Sakura Miku character model in a motion capture pose, standing in a digital workspace with interface elements visible, neutral expression, technical and creative environment" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
+        `<img src="assets/media/aidaruma/beacons.jpg" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
         `<video controls class="portrait" style="border-radius:8px;">
           <source src="assets/media/aidaruma/darumaai_intro_short.mp4" type="video/mp4" />
         </video>`
@@ -75,11 +78,11 @@ function showModal(id) {
         `<video controls class="portrait" style="border-radius:8px;">
           <source src="assets/media/eden/edenshort.mp4" type="video/mp4" />
         </video>`,
-        `<img src="assets/media/eden/depth.png" alt="" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
-        `<img src="assets/media/eden/id.png" alt="" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
-        `<img src="assets/media/eden/fight.png" alt="" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
-        `<img src="assets/media/eden/horror.png" alt="" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
-        `<img src="assets/media/eden/desert.png" alt="" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
+        `<img src="assets/media/eden/depth.png" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
+        `<img src="assets/media/eden/id.png" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
+        `<img src="assets/media/eden/fight.png" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
+        `<img src="assets/media/eden/horror.png" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
+        `<img src="assets/media/eden/desert.png" style="width:100%;margin-top:1rem;border-radius:8px;" />`,
       ]
     },
     6: {
@@ -92,10 +95,20 @@ function showModal(id) {
         `<video controls class="portrait" style="border-radius:8px;">
           <source src="assets/media/metaverse/dither.mp4" type="video/mp4" />
         </video>`,
-        `<img src="assets/media/metaverse/karaoke.webp" alt="Sakura Miku character model in a motion capture pose, standing in a digital workspace with interface elements visible, neutral expression, technical and creative environment" style="width:100%;margin-top:1rem;border-radius:8px;" />`
+        `<img src="assets/media/metaverse/karaoke.webp" style="width:100%;margin-top:1rem;border-radius:8px;" />`
       ]
     },
     7: {
+      title: "Blender 3D Text generator tool",
+      description: "Simple <b>Python tool for Blender</b> that generates and exports 3D text from input string and settings. <br> It allows the user to set the font, size, extrusion depth, and roughness of the text, and then exports it as an <b>FBX</b> file. ",
+      media: [
+        `<video controls class="portrait" style="border-radius:8px;">
+          <source src="assets/media/blendertext/portfolio3d.mp4" />
+        </video>`,
+        `<img src="assets/media/blendertext/kokoro.png" style="width:100%;margin-top:1rem;border-radius:8px;" />`
+      ]
+    },
+    8: {
       title: "Houdini physically based water simulations",
       description: "Physically based water effects in Houdini for an unnanounced anime project. <br> I worked with particle fluids tools to create multiple <b>water effects animations</b>, such as tentacles made of water, which were exported as <b>Alembic</b> files.",
       media: [
