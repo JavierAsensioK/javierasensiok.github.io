@@ -10,11 +10,18 @@ body {
 }
 header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding: 2rem;
-  max-width: 960px;
+  max-width: 1200px;
   margin: auto;
 }
+
+.header-left {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -22,8 +29,33 @@ header {
   object-fit: cover;
   margin-right: 1.5rem;
 }
+
 .intro {
   flex: 1;
+  width: 100%;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-row h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.email-text {
+  color: #f0f0f0;
+  background: #23272a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  margin-left: 2rem;
+  white-space: nowrap;
 }
 .portfolio-container {
   width: 90vw;
